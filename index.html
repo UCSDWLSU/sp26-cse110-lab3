@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 110 Lab 2</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <h1>CSE 110 Lab 2</h1>
+        <h2>Topic: Meeting Minutes Practice (Intro To HTML)</h2>
+        <h3>Date: <strong>April 20, 2026</strong></h3>
+        
+        <nav>
+            <ul>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#agenda">Agenda & Notes</a></li>
+                <li><a href="#media">Meeting Media</a></li>
+                <li><a href="#feedback">Feedback Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="attendance">
+            <h3>Attendance List</h3>
+            <ul>
+                <li>Darci</li>
+                <li>Hojoon</li>
+                <li>John</li>
+                <li>Jordan</li>
+                <li>Kabyan</li>
+                <li>Pranav</li>
+                <li>Quinton</li>
+                <li>Shawn</li>
+                <li>Wayne</li>
+            </ul>
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda & Notes</h2>
+            <article>
+                <h3>Unfinished Business From Last Meeting</h3>
+                <p>We still need to finalize our GitHub repository setup and ensure everyone has cloned it correctly.</p>
+            </article>
+
+            <article>
+                <h3>Today's Agenda & New Business</h3>
+                <ol>
+                    <li>Review Lab 2 Requirements</li>
+                    <li>Discuss Application Ideas</li>
+                    <li>Assign Preliminary Roles</li>
+                </ol>
+            </article>
+        </section>
+
+        <div>
+            <details>
+                <summary>Click To View Specific Action Items</summary>
+                <p>Darci and Wayne will coordinate the repo setup by Wednesday.</p>
+            </details>
+        </div>
+
+        <section>
+            <h3>Questions, Comments, & Concerns</h3>
+            <dl>
+                <dt>Shawn:</dt>
+                <dd>Remember to do this week's LettuceMeet <em>ASAP</em>.</dd>
+            </dl>
+        </section>
+
+        <section id="media">
+            <h3>Meeting Media</h3>
+            
+            <h4>Picture</h4>
+            <img src="picture.jpg" alt="SWE Meeting Whiteboard Example">
+
+            <h4>Audio</h4>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h4>Video</h4>
+            <video controls width="400">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="feedback">
+            <h3>Post-Meeting Form</h3>
+            <form action="#">
+                <fieldset>
+                    <legend>Meeting Feedback</legend>
+
+                    <div>
+                        <label>Your Name: <input type="text" name="userName"></label>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Meeting Date: <input type="date" name="meetingDate"></label>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Your Department: <input type="text" list="departments" name="department"></label>
+                        <datalist id="departments">
+                            <option value="Engineering"></option>
+                            <option value="Design"></option>
+                            <option value="Management"></option>
+                        </datalist>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Role: 
+                            <select name="role">
+                                <option value="dev">Developer</option>
+                                <option value="design">Designer</option>
+                                <option value="pm">Project Manager</option>
+                            </select>
+                        </label>
+                    </div>
+                    <br>
+                    <div>
+                        <span>Meeting Productivity: </span>
+                        <input type="radio" id="productive" name="rating" value="productive">
+                        <label for="productive">Productive</label>
+                        
+                        <input type="radio" id="unproductive" name="rating" value="unproductive">
+                        <label for="unproductive">Unproductive</label>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="checkbox" id="sendCopy" name="sendCopy">
+                        <label for="sendCopy">Email Me A Copy</label>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Additional Comments:<br>
+                            <textarea name="comments" rows="4" cols="40"></textarea>
+                        </label>
+                    </div>
+                    <br>
+                    <button type="button">Submit Feedback</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <aside>
+            <p><strong>Note:</strong> Next meeting is scheduled for 00/00 at 00:00 AM.</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>Prepared by Wayne Su for CSE 110</p>
+    </footer>
+
+</body>
+</html>
