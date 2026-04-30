@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --main-bg-color: #f0f8ff;
+  --text-color: rgba(0, 0, 0, 0.8);
+  --accent-color: hsl(200, 100%, 50%);
+}
+
+body {
+  background-color: var(--main-bg-color, white);
+  color: var(--text-color, black);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: var(--accent-color);
+}
