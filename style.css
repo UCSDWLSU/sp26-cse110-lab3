@@ -20,3 +20,36 @@ h1 {
   text-decoration: underline;
   color: var(--accent-color);
 }
+
+section {
+  padding: 20px 10px; 
+  border: 2px solid var(--accent-color);
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+main {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+#attendance {
+  border-radius: 8px;
+  border-style: dashed;
+  border-width: 3px;
+}
+
+/* Image Misalignment Fix */
+#media img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 100%;
+    height: auto;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
