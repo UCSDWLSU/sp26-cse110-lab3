@@ -87,3 +87,36 @@ article h3::after {
     right: 10px;
     top: 10px;
 }
+
+nav a {
+    text-decoration: none;
+    color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: white;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #ddd;
+}
+
+@media (max-width: 600px) {
+    #attendance ul {
+        grid-template-columns: 1fr; /* Collapse to one column */
+    }
+
+    main {
+        padding: 0 10px; /* Add some side breathing room on mobile */
+    }
+    
+    nav ul {
+        flex-direction: column; /* Stack nav links vertically */
+        align-items: center;
+    }
+}
