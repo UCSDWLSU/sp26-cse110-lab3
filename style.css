@@ -120,3 +120,22 @@ button:active {
         align-items: center;
     }
 }
+
+h3 + p {
+    font-style: italic;
+    color: #555;
+}
+
+a[href^="http"] {
+    font-weight: bold;
+    text-decoration: underline wavy var(--accent-color);
+}
+
+#attendance li:nth-child(even) {
+    background-color: #eef;
+}
+
+article p::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
